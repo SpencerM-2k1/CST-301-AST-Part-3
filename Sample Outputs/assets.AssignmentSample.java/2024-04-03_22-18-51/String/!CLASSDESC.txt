@@ -1,0 +1,66 @@
+The String class represents character strings. All
+ string literals in Java programs, such as "abc", are
+ implemented as instances of this class.
+ 
+ Strings are constant; their values cannot be changed after they
+ are created. String buffers support mutable strings.
+ Because String objects are immutable they can be shared. For example:
+ 
+     String str = "abc";
+ 
+ is equivalent to:
+ 
+     char data[] = {'a', 'b', 'c'};
+     String str = new String(data);
+ 
+ Here are some more examples of how strings can be used:
+ 
+     System.out.println("abc");
+     String cde = "cde";
+     System.out.println("abc" + cde);
+     String c = "abc".substring(2,3);
+     String d = cde.substring(1, 2);
+ 
+
+ The class String includes methods for examining
+ individual characters of the sequence, for comparing strings, for
+ searching strings, for extracting substrings, and for creating a
+ copy of a string with all characters translated to uppercase or to
+ lowercase. Case mapping is based on the Unicode Standard version
+ specified by the Character class.
+ 
+ The Java language provides special support for the string
+ concatenation operator ( + ), and for conversion of
+ other objects to strings. String concatenation is implemented
+ through the StringBuilder(or StringBuffer)
+ class and its append method.
+ String conversions are implemented through the method
+ toString, defined by Object and
+ inherited by all classes in Java. For additional information on
+ string concatenation and conversion, see Gosling, Joy, and Steele,
+ The Java Language Specification.
+
+  Unless otherwise noted, passing a null argument to a constructor
+ or method in this class will cause a NullPointerException to be
+ thrown.
+
+ A String represents a string in the UTF-16 format
+ in which supplementary characters are represented by surrogate
+ pairs (see the section Unicode
+ Character Representations in the Character class for
+ more information).
+ Index values refer to char code units, so a supplementary
+ character uses two positions in a String.
+ The String class provides methods for dealing with
+ Unicode code points (i.e., characters), in addition to those for
+ dealing with Unicode code units (i.e., char values).
+
+=== CLASS TAGS ===
+Label<`Data Structure`>:
+- The String class in Java is a fundamental data structure for storing sequences of characters and is used to manipulate text data.
+
+Label<`Language`>:
+- The description details the internal language features, such as string literals, immutability, and methods for string manipulation, which are inherent to Java as a programming language.
+
+Label<`Software Development and IT`>:
+- String handling is a core aspect of software development, and understanding the String class is essential for version control, continuous integration, and continuous delivery within Java environments.

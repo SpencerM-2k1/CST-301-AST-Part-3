@@ -1,0 +1,25 @@
+An exception that provides information on a database access
+ error or other errors.
+
+ Each SQLException provides several kinds of information:
+ 
+ a string describing the error.  This is used as the Java Exception
+       message, available via the method getMesasge.
+    a "SQLstate" string, which follows either the XOPEN SQLstate conventions
+        or the SQL:2003 conventions.
+       The values of the SQLState string are described in the appropriate spec.
+       The DatabaseMetaData method getSQLStateType
+       can be used to discover whether the driver returns the XOPEN type or
+       the SQL:2003 type.
+    an integer error code that is specific to each vendor.  Normally this will
+       be the actual error code returned by the underlying database.
+    a chain to a next Exception.  This can be used to provide additional
+       error information.
+    the causal relationship, if any for this SQLException.
+
+=== CLASS TAGS ===
+Label<`Databases`>:
+- The class description pertains to handling SQL exceptions, which are directly related to database access and operations.
+
+Label<`Error Handling`>:
+- It involves response and recovery procedures from error conditions, which is a core aspect of error handling in software development.

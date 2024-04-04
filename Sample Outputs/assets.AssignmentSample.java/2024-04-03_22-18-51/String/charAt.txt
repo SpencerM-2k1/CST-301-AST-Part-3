@@ -1,0 +1,16 @@
+Returns the char value at the
+ specified index. An index ranges from 0 to
+ length() - 1. The first char value of the sequence
+ is at index 0, the next at index 1,
+ and so on, as for array indexing.
+
+ If the char value specified by the index is a
+ surrogate, the surrogate
+ value is returned.
+
+=== METHOD TAGS ===
+Label<`Data Structure`>:
+- The class description fits 'Data Structure' because it involves accessing elements in a sequence, similar to how data is managed in collections, lists, or arrays.
+
+Label<`Language`>:
+- The class description also aligns with 'Language' as it pertains to internal language features and handling of character values, including surrogate pairs in strings.
